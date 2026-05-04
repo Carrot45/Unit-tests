@@ -5,6 +5,7 @@
 #include <initializer_list>
 #include <stdexcept>
 #include <type_traits>
+#include <string>
 
 template <typename T>
 class ExtArray
@@ -59,8 +60,14 @@ public:
             for (size_t i = 0; i < _size; i++)
             {
                 if (extended_array[i] == 1)
+                {
                     count++;
-                else if (extended_array[i] != 0 && extended_array[i] != 1)
+                }
+                else if (extended_array[i] < 0)
+                {
+                    throw std::logic_error("Ошибка: обнаружено отрицательное число ");
+                }
+                else if (extended_array[i] > 0 && extended_array[i] != 1)
                 {
                     throw std::logic_error("Массив содержит значения, отличные от 0 и 1");
                 }
