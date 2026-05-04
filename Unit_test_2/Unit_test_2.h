@@ -1,10 +1,8 @@
-#ifndef EXTENDED_ARRAY_H
+п»ї#ifndef EXTENDED_ARRAY_H
 #define EXTENDED_ARRAY_H
 
 #include <vector>
 #include <initializer_list>
-//#include <utility>
-//#include <algorithm>
 #include <iostream>
 #include <string>
 #include <windows.h>
@@ -41,7 +39,7 @@ public:
 		{
 			if (!is_valid_range(first, second))
 			{
-				throw std::invalid_argument("Значения для номеров указаны неверно");
+				throw std::invalid_argument("Р—РЅР°С‡РµРЅРёСЏ РґР»СЏ РЅРѕРјРµСЂРѕРІ СѓРєР°Р·Р°РЅС‹ РЅРµРІРµСЂРЅРѕ");
 			}
 			double sum = 0;
 			for (size_t i = first; i < second; i++)

@@ -1,4 +1,4 @@
-#ifndef FRAMEWORK_H
+ï»¿#ifndef FRAMEWORK_H
 #define FRAMEWORK_H
 
 #include <cassert>
@@ -15,7 +15,7 @@ void test_mean(int first, int second)
     }
     catch (const std::invalid_argument& e) 
     {
-        std::cout << "èñêëþ÷åíèå: " << e.what() << std::endl;
+        std::cout << "Ð¸ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ: " << e.what() << std::endl;
     }
 }
 
